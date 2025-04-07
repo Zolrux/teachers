@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Найкращий викладач Рішельєвського ліцею</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="/statistic" class="header__stat">Статистика</a>
+        </header>
+        <main class="page-pick">
+            <div class="page-pick__body">
+                <form action="/test" method="GET" class="page-pick__form form-pick">
+                    <div class="form-pick__image">
+                        <img src="../images/lycuem.jpg" alt="Рішельєвський науковий ліцей">
+                    </div>
+                    <div class="form-pick__body">
+                        <h1 class="form-pick__title">Найкращий викладач Рішельєвського наукового ліцею</h1>
+                        <div class="form-pick__top">
+                            <div class="form-pick__radio">
+                                <div class="form-pick__radio-text">Варіанти</div>
+                                <label for="count-1" class="form-pick__label">
+                                    <input id="count-1" type="radio" name="count" class="form-pick__input" value="32" checked>
+                                    <span class="form-pick__text">32</span>
+                                </label>
+                                <label for="count-2" class="form-pick__label">
+                                    <input id="count-2" type="radio" name="count" class="form-pick__input" value="64">
+                                    <span class="form-pick__text">64</span>
+                                </label>
+                            </div>
+                            <div class="form-pick__radio">
+                                <label for="mode-1" class="form-pick__label">
+                                    <input id="mode-1" type="radio" name="mode" class="form-pick__input" value="classic" checked>
+                                    <span class="form-pick__text">Класичний</span>
+                                </label>
+                                <label for="mode-2" class="form-pick__label">
+                                    <input id="mode-2" type="radio" name="mode" class="form-pick__input" value="mountain">
+                                    <span class="form-pick__text">Цар гори</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="form-pick__btn">Почати</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>

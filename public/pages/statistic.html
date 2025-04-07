@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Статистика викладачів</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="/" class="header__logo">
+                <img src="../images/vs-logo.png" alt="logo">
+            </a>
+            <h1 class="header__title">Статистика</h1>
+        </header>
+        <main class="page-statistic">
+            <div class="page-statistic__body">
+                <div class="page-statistic__btns">
+                    <button type="button" class="page-statistic__btn active" data-mode="classic">Класичний</button>
+                    <button type="button" class="page-statistic__btn" data-mode="mountain">Цар гори</button>
+                </div>
+                <ul class="page-statistic__list"></ul>
+                <button type="button" class="page-statistic__load-more">Завантажити ще</button>
+            </div>
+            <div class="modal-loader modal-loader--fixed">
+                <div class="modal-loader__body">
+                    <img src="images/vs-logo.png" alt="logo">
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+    <script type="module" src="js/statistic.js"></script>
+</body>
+</html>

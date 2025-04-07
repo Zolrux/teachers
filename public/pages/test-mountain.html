@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Найкращий викладач Рішельєвського ліцею</title>
+</head>
+<body>
+    <div class="wrapper">
+        <main class="page">
+            <div class="page__header header-page">
+                <h1 class="header-page__title">Найкращий викладач Рішельєвського наукового ліцею</h1>
+                <div class="header-page__stat">
+                    <div class="online">
+                        <img src="images/user.svg" alt="user icon">
+                        <div class="online__text">
+                            0
+                        </div>
+                    </div>
+                    <div class="header-page__round">Раунд: <span data-round>10</span> / <span data-max-round>32</span></div>
+                    <!-- <div class="header-page__controls controls-header">
+                        <button type="button" class="controls-header__btn" disabled>
+                            <img src="images/arrow-back.svg" alt="Іконка повернення раунда" class="controls-header__icon">
+                            <span class="controls-header__text">Крок назад</span>
+                        </button>
+                    </div> -->
+                </div>
+            </div>
+            <div class="page__body body-page">
+                <div class="body-page__fullname fullname">
+                    <div class="fullname__left" data-fullname-side="left"></div>
+                    <div class="fullname__right" data-fullname-side="right"></div>
+                </div>
+                <div class="body-page__variants variants"></div>
+            </div>
+            <div class="modal-loader modal-loader--fixed">
+                <div class="modal-loader__body">
+                    <img src="images/vs-logo.png" alt="logo">
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+        <div class="block-click"></div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" defer src="js/test-mountain.js"></script>
+</body>
+</html>
