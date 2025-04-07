@@ -1,1 +1,1 @@
-export const MAIN_URL = "http://localhost:5100";
+export const MAIN_URL = "https://teachers-app-u2f5.onrender.com";
