@@ -126,23 +126,23 @@ app.post("/api/win", async (req, res) => {
   }
 });
 
-(async () => {
-  const teachers = await Teacher.find({});
+// (async () => {
+//   const teachers = await Teacher.find({});
 
-  const statisticsData = teachers.map((teacher) => ({
-    teacher: teacher._id, // Привязываем к ID преподавателя
-    classicMode: {
-      wins: 0,
-      selectedCount: 0,
-    },
-    mountainMode: {
-      wins: 0,
-      selectedCount: 0,
-    },
-  }));
+//   const statisticsData = teachers.map((teacher) => ({
+//     teacher: teacher._id, // Привязываем к ID преподавателя
+//     classicMode: {
+//       wins: 0,
+//       selectedCount: 0,
+//     },
+//     mountainMode: {
+//       wins: 0,
+//       selectedCount: 0,
+//     },
+//   }));
   
-  await Statistic.insertMany(statisticsData);
-})()
+//   await Statistic.insertMany(statisticsData);
+// })()
 
 io.on("connection", (socket) => {
   onlineUsers++;
